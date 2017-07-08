@@ -1,7 +1,7 @@
 (function() {
 "use strict";
 /* global moment, angular */
-
+require('moment');
 var module = angular.module("mdPickers", [
     "ngMaterial",
     "ngAnimate",
@@ -264,6 +264,7 @@ module.provider("$mdpDatePicker", function() {
                     options: options
                 },
                 multiple: true,
+                skipHide: true,
                 parent: PARENT_GETTER()
             });
         };
@@ -936,6 +937,7 @@ module.provider("$mdpTimePicker", function() {
                     ampm: angular.isDefined(options.ampm) ? options.ampm : $mdpLocale.time.ampm
                 },
                 multiple: true,
+                skipHide: true,
                 parent: PARENT_GETTER()
             });
         };
