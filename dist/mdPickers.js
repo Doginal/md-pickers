@@ -1,7 +1,7 @@
 (function() {
 "use strict";
 /* global moment, angular */
-require('moment');
+var moment = require('moment');
 var module = angular.module("mdPickers", [
     "ngMaterial",
     "ngAnimate",
@@ -96,7 +96,7 @@ module.directive("ngMessage", ["$mdUtil", function($mdUtil) {
 
 }]);
 /* global moment, angular */
-
+var moment = require('moment');
 function DatePickerCtrl($scope, $mdDialog, $mdMedia, $timeout, currentDate, options) {
     var self = this;
 
@@ -683,7 +683,7 @@ module.directive("mdpDatePicker", ["$mdpDatePicker", "$timeout", function($mdpDa
     }
 }]);
 /* global moment, angular */
-
+var moment = require('moment');
 function TimePickerCtrl($scope, $mdDialog, time, autoSwitch, ampm, $mdMedia) {
     var self = this;
     this.VIEW_HOURS = 1;

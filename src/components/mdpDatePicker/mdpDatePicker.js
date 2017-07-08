@@ -1,5 +1,5 @@
 /* global moment, angular */
-
+var moment = require('moment');
 function DatePickerCtrl($scope, $mdDialog, $mdMedia, $timeout, currentDate, options) {
     var self = this;
 

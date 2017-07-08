@@ -1,5 +1,5 @@
 /* global moment, angular */
-require('moment');
+var moment = require('moment');
 var module = angular.module("mdPickers", [
     "ngMaterial",
     "ngAnimate",

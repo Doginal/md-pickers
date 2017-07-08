@@ -1,5 +1,5 @@
 /* global moment, angular */
-
+var moment = require('moment');
 function TimePickerCtrl($scope, $mdDialog, time, autoSwitch, ampm, $mdMedia) {
     var self = this;
     this.VIEW_HOURS = 1;
