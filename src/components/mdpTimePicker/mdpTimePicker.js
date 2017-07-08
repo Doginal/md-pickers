@@ -253,6 +253,7 @@ module.provider("$mdpTimePicker", function() {
                     ampm: angular.isDefined(options.ampm) ? options.ampm : $mdpLocale.time.ampm
                 },
                 multiple: true,
+                skipHide: true,
                 parent: PARENT_GETTER()
             });
         };

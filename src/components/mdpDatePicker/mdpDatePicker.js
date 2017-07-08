@@ -167,6 +167,7 @@ module.provider("$mdpDatePicker", function() {
                     options: options
                 },
                 multiple: true,
+                skipHide: true,
                 parent: PARENT_GETTER()
             });
         };
